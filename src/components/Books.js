@@ -1,4 +1,6 @@
 import React from 'react';
+import Book from './Book';
+import BookForm from './BookForm';
 import './Books.css';
 
 export default function Books() {
@@ -21,29 +23,12 @@ export default function Books() {
       <ul className="books-list">
         {books.map((book) => (
           <li key={books.indexOf(book)}>
-            <span className="book-title">
-              Title:
-              {book.title}
-            </span>
-            <br />
-            <span className="book-author">
-              Author:
-              {book.author}
-            </span>
-            <br />
+            <Book title={book.title} author={book.author} />
             <hr />
-            <br />
           </li>
         ))}
       </ul>
-      <div className="book-form">
-        <h2>Add Book</h2>
-        <form>
-          <input placeholder="Book title" />
-          <input placeholder="Book author" />
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
+      <BookForm />
     </div>
   );
 }
