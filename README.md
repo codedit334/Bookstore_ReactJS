@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Module 3: React Tutorial</b></h3>
+  <h3><b>Module 3: Bookstore</b></h3>
 
 </div>
 
@@ -31,12 +31,12 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 React Tutorial <a name="about-project"></a>
+# 📖 Bookstore <a name="about-project"></a>
 
-React Tutorial is a project where i rebuild the todo app using ReactJS.
+Bookstore is a website that displays, adds and deletes books, it's built using ReactJS and Redux.
 
 ## 🛠 Built With <a name="built-with"></a>
-HTML, CSS, NodeJS v18, ReactJS
+HTML, CSS, NodeJS v18, ReactJS, Redux
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
@@ -56,7 +56,14 @@ HTML, CSS, NodeJS v18, ReactJS
 <details>
   <summary>Front-end framwork</summary>
   <ul>
-    <li><a href="https://webpack.js.org/">ReactJS</a></li>
+    <li><a href="https://react.dev/">ReactJS</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Libraries</summary>
+  <ul>
+    <li><a href="https://redux.js.org/">Redux</a></li>
   </ul>
 </details>
 
@@ -80,6 +87,8 @@ HTML, CSS, NodeJS v18, ReactJS
 - JSX.
 
 - Components.
+
+- Single source of truth​.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,13 +121,13 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 ```sh
   cd my-folder
-  git clone git@github.com/codedit334/react-tutorial.git
+  git clone git@github.com/codedit334/Bookstore_ReactJS.git
 ```
 ### Install
 
 Install this project with:
 ```sh
-  cd react-tutorial
+  cd Bookstore_ReactJS
   npm install
 ```
 
@@ -181,7 +190,7 @@ To check for js errors run:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/codedit334/react-tutorial/issues).
+Feel free to check the [issues page](https://github.com/codedit334/Bookstore_ReactJS/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -215,13 +224,17 @@ I would like to thank Microverse for offering me this opportunity to learn, and 
   - React uses Virtual DOM.
   - React has a large ecosystem.
 
+-Why use Redux?
+
+  - Redux allows you to manage your app's state in a single place and keep changes in your app more predictable and traceable. 
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/codedit334/react-tutorial/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/codedit334/Bookstore_ReactJS/blob/main/LICENSE) licensed.
 (Check the LICENSE file)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
