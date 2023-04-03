@@ -1,29 +1,18 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 import BookForm from './BookForm';
 import './Books.css';
 
 export default function Books() {
-  const books = [
-    {
-      author: 'The Hunger Games',
-      title: 'Suzane Collins',
-    },
-    {
-      author: 'Dune',
-      title: 'Frank Herbert',
-    },
-    {
-      author: 'Brave New World',
-      title: 'Aldous Huxley',
-    },
-  ];
+  const books = useSelector((state) => state.books);
+
   return (
     <div className="books">
       <ul className="books-list">
         {books.map((book) => (
-          <li key={books.indexOf(book)}>
-            <Book title={book.title} author={book.author} />
+          <li key={book.id}>
+            <Book title={book.title} author={book.author} id={book.item_id} />
             <hr />
           </li>
         ))}

@@ -1,10 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { bookRemoved } from '../redux/books/booksSlice';
 
 export default function Book(props) {
-  const { title, author } = props;
+  const { title, author, id } = props;
+
+  const dispatch = useDispatch();
+
+  const handleClick = (e) => {
+    dispatch(bookRemoved(e.target.parentNode.dataset.id));
+  };
+
   return (
-    <div className="book">
+    <div className="book" data-id={id}>
       <div className="book-title">
         Title:
         {title}
@@ -13,9 +22,9 @@ export default function Book(props) {
         Author:
         {author}
       </div>
-      <div className="book-delete">
-        <button type="button">Delete</button>
-      </div>
+      <button type="button" className="book-delete" onClick={handleClick}>
+        Delete
+      </button>
     </div>
   );
 }
@@ -23,4 +32,5 @@ export default function Book(props) {
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
