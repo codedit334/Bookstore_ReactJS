@@ -1,26 +1,36 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { bookAdded } from '../redux/books/booksSlice';
+import { addNewBook } from '../redux/books/booksSlice';
 
 export default function BookForm() {
+  const [addRequestStatus, setAddRequestStatus] = useState('idle');
+
   const titleVal = useRef();
   const authorVal = useRef();
   const dispatch = useDispatch();
 
-  const handleClick = (e) => {
+  const handleClick = async (e) => {
     e.preventDefault();
-    if (!titleVal.current.value || !authorVal.current.value) return;
-    dispatch(
-      bookAdded({
-        item_id:
-          Math.random().toString(36).substring(2, 15)
-          + Math.random().toString(36).substring(2, 15),
-        title: titleVal.current.value,
-        author: authorVal.current.value,
-      }),
-    );
-    titleVal.current.value = '';
-    authorVal.current.value = '';
+    if (!titleVal.current.value || !authorVal.current.value || addRequestStatus !== 'idle') return;
+    try {
+      setAddRequestStatus('pending');
+      await dispatch(
+        addNewBook({
+          item_id:
+            Math.random().toString(36).substring(2, 15)
+            + Math.random().toString(36).substring(2, 15),
+          title: titleVal.current.value,
+          author: authorVal.current.value,
+          category: '',
+        }),
+      );
+      titleVal.current.value = '';
+      authorVal.current.value = '';
+    } catch (err) {
+      console.error('Failed to save the post: ', err);
+    } finally {
+      setAddRequestStatus('idle');
+    }
   };
   return (
     <div className="book-form">
