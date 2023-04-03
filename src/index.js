@@ -2,9 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { fetchBooks } from './redux/books/booksSlice';
 import store from './redux/store';
 import './index.css';
 import App from './App';
+
+store.dispatch(fetchBooks());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { bookRemoved } from '../redux/books/booksSlice';
+import { deleteBook } from '../redux/books/booksSlice';
 
 export default function Book(props) {
   const { title, author, id } = props;
@@ -9,7 +9,7 @@ export default function Book(props) {
   const dispatch = useDispatch();
 
   const handleClick = (e) => {
-    dispatch(bookRemoved(e.target.parentNode.dataset.id));
+    dispatch(deleteBook(e.target.parentNode.dataset.id));
   };
 
   return (
