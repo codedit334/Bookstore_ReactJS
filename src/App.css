@@ -12,16 +12,33 @@ nav {
 
 .menu {
   display: flex;
-  gap: 30px;
-  padding-right: 20px;
+  gap: 60px;
+  padding-right: 30px;
 }
 
 .logo {
-  padding: 20px;
+  padding: 2px;
 }
 
 .menu li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #8d8712;
+}
+
+.menu a:hover {
+  background-color: rgb(200, 199, 199);
+  padding: 10px 12px;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
 footer {

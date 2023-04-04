@@ -19,8 +19,9 @@ export default function Books() {
 
   return (
     <div className="books">
-      <ul className="books-list">
-        {bookStatus === 'succeeded'
+      <div className="books-wrapper">
+        <ul className="books-list">
+          {bookStatus === 'succeeded'
           && Object.keys(books.books).map((key) => (
             <li key={key}>
               <Book
@@ -31,7 +32,8 @@ export default function Books() {
               <hr />
             </li>
           ))}
-      </ul>
+        </ul>
+      </div>
       <BookForm />
     </div>
   );

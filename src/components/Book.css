@@ -1,0 +1,32 @@
+.book {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-title,
+.book-author {
+  text-align: start;
+}
+
+.book-delete {
+  color: black;
+  background-color: #e2de84;
+  width: 60px;
+  height: 50px;
+  border: none;
+  box-shadow: 2px 2px #cec40b;
+  font-weight: bold;
+}
+
+.book-delete:hover {
+  cursor: pointer;
+}
+
+.book-space {
+  color: black;
+}
+
+.title-space {
+  position: relative;
+  left: 5px;
+}

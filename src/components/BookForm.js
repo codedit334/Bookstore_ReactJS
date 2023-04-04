@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addNewBook } from '../redux/books/booksSlice';
+import './BookForm.css';
 
 export default function BookForm() {
   const [addRequestStatus, setAddRequestStatus] = useState('idle');

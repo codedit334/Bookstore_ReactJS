@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { deleteBook } from '../redux/books/booksSlice';
+import './Book.css';
 
 export default function Book(props) {
   const { title, author, id } = props;
@@ -14,13 +15,17 @@ export default function Book(props) {
 
   return (
     <div className="book" data-id={id}>
-      <div className="book-title">
-        Title:
-        {title}
-      </div>
-      <div className="book-author">
-        Author:
-        {author}
+      <div className="book-wrapper">
+        <div className="book-title">
+          <span className="book-space">Title:</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span className="title-space">{title}</span>
+        </div>
+        <div className="book-author">
+          <span className="book-space">Author:</span>
+&nbsp;&nbsp;
+          {author}
+        </div>
       </div>
       <button type="button" className="book-delete" onClick={handleClick}>
         Delete
