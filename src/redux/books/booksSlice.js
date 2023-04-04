@@ -34,10 +34,7 @@ export const deleteBook = createAsyncThunk(
 const booksSlice = createSlice({
   name: 'books',
   initialState,
-  reducers: {
-    bookAdded() {},
-    bookRemoved() {},
-  },
+  reducers: { },
   extraReducers(builder) {
     /* eslint-disable */
     builder
