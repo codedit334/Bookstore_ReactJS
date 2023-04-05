@@ -10,6 +10,16 @@ nav {
   justify-content: space-between;
 }
 
+.nav-left {
+  display: flex;
+  margin: 0 4.2%;
+}
+
+.nav-right {
+  margin: 10px;
+  color: lightgray;
+}
+
 .navigation {
   height: 60px;
   background-color: gray;
