@@ -4,6 +4,7 @@ import BookForm from './BookForm';
 import Book from './Book';
 import './Books.css';
 import { fetchBooks } from '../redux/books/booksSlice';
+import BookProgress from './BookProgress';
 
 export default function Books() {
   const dispatch = useDispatch();
@@ -19,21 +20,20 @@ export default function Books() {
 
   return (
     <div className="books">
-      <div className="books-wrapper">
-        <ul className="books-list">
-          {bookStatus === 'succeeded'
+      <ul className="books-list">
+        {bookStatus === 'succeeded'
           && Object.keys(books.books).map((key) => (
             <li key={key}>
               <Book
                 title={books.books[key][0].title}
                 author={books.books[key][0].author}
+                category={books.books[key][0].category}
                 id={key}
               />
-              <hr />
+              <BookProgress />
             </li>
           ))}
-        </ul>
-      </div>
+      </ul>
       <BookForm />
     </div>
   );

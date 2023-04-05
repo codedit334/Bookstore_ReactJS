@@ -4,29 +4,21 @@
 }
 
 .book-title,
-.book-author {
+.book-author,
+.book-category {
   text-align: start;
 }
 
-.book-delete {
-  color: black;
-  background-color: #e2de84;
-  width: 60px;
-  height: 50px;
-  border: none;
-  box-shadow: 2px 2px #cec40b;
-  font-weight: bold;
+.book-category {
+  font-size: 69%;
+  color: rgb(91, 90, 90);
 }
 
-.book-delete:hover {
-  cursor: pointer;
-}
-
-.book-space {
+.book-author {
+  font-size: 85%;
   color: black;
 }
 
-.title-space {
-  position: relative;
-  left: 5px;
+.book-title {
+  color: #437070;
 }

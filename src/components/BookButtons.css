@@ -1,0 +1,16 @@
+.bookButtons {
+  display: flex;
+  gap: 8px;
+  color: white;
+}
+
+.bookButtons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: whitesmoke;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}

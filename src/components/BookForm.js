@@ -22,7 +22,7 @@ export default function BookForm() {
             + Math.random().toString(36).substring(2, 15),
           title: titleVal.current.value,
           author: authorVal.current.value,
-          category: '',
+          category: 'Fiction',
         }),
       );
       titleVal.current.value = '';
@@ -35,6 +35,7 @@ export default function BookForm() {
   };
   return (
     <div className="book-form">
+      <hr />
       <h2>Add Book</h2>
       <form>
         <input placeholder="Book title" ref={titleVal} />

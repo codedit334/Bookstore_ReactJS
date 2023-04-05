@@ -1,0 +1,56 @@
+.status-circle {
+  width: 125px !important;
+  display: flex;
+}
+
+.status-percentage {
+  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.status-completed {
+  font-weight: 100 !important;
+  font-size: 50% !important;
+}
+
+.status-border {
+  width: 65px;
+  position: relative;
+  left: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.bookProgress-status {
+  display: flex;
+}
+
+.status-text {
+  display: flex;
+  margin-left: 60px;
+  flex-direction: column;
+}
+
+.status-text h2 {
+  font-weight: 100 !important;
+  font-size: 50% !important;
+}
+
+.status-text-chapter {
+  font-size: 85%;
+}
+
+.status-text h2,
+.status-text-chapter {
+  text-align: start;
+}
+
+.status-text-button {
+  background-color: #e2de84;
+  border: #aba30b;
+  font-size: 70%;
+  padding: 3px;
+  margin-top: 8px;
+}
