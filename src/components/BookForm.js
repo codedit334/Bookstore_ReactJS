@@ -12,7 +12,11 @@ export default function BookForm() {
 
   const handleClick = async (e) => {
     e.preventDefault();
-    if (!titleVal.current.value || !authorVal.current.value || addRequestStatus !== 'idle') return;
+    if (
+      !titleVal.current.value
+      || !authorVal.current.value
+      || addRequestStatus !== 'idle'
+    ) return;
     try {
       setAddRequestStatus('pending');
       await dispatch(
@@ -34,14 +38,16 @@ export default function BookForm() {
     }
   };
   return (
-    <div className="book-form">
-      <hr />
-      <h2>Add Book</h2>
-      <form>
-        <input placeholder="Book title" ref={titleVal} />
-        <input placeholder="Book author" ref={authorVal} />
-        <input type="submit" onClick={handleClick} value="Submit" />
-      </form>
+    <div className="book-form-wrapper">
+      <div className="book-form">
+        <hr />
+        <h2>Add Book</h2>
+        <form>
+          <input placeholder="Book title" ref={titleVal} />
+          <input placeholder="Book author" ref={authorVal} />
+          <input type="submit" onClick={handleClick} value="Submit" />
+        </form>
+      </div>
     </div>
   );
 }

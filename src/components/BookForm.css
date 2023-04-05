@@ -1,6 +1,9 @@
+.book-form-wrapper {
+  width: 100%;
+}
+
 .book-form {
-  padding: 20px;
-  width: 90%;
+  margin: 0 40px;
   height: 160px;
   margin-bottom: 20px;
   background-color: #4b5358;
