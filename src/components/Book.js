@@ -23,12 +23,9 @@ export default function Book(props) {
           {category}
         </div>
         <div className="book-title">
-          {/* <span className="book-space">Title:</span> */}
-          {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
           <span className="title-space">{title}</span>
         </div>
         <div className="book-author">
-          {/* <span className="book-space">Author:</span> */}
           {author}
         </div>
         <BookButtons handleClick={handleClick} />
