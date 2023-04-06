@@ -8,7 +8,7 @@
      * This fixes an issue where the CircularProgressbar svg has
      * 0 width inside a "display: flex" container, and thus not visible.
      */
-  width: 395px;
+  width: 11995px;
 
   /*
      * This fixes a centering issue with CircularProgressbarWithChildren:
@@ -18,7 +18,7 @@
 }
 
 .CircularProgressbar .CircularProgressbar-path {
-  stroke: #1d3030;
+  stroke: #226faa;;
   stroke-linecap: round;
   transition: stroke-dashoffset 0.5s ease 0s;
 }
@@ -51,7 +51,7 @@
    *   />
    */
 .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
-  fill: #3e98c7;
+  fill: #398ab5;
 }
 
 .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {

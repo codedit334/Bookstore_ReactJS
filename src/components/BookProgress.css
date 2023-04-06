@@ -1,5 +1,5 @@
 .status-circle {
-  width: 125px !important;
+  width: 175px !important;
   display: flex;
 }
 
@@ -11,9 +11,17 @@
   justify-content: center;
 }
 
+.status-percentage span {
+  font-family: "Montserrat", sans-serif;
+  color: #121212;
+  font-size: 2rem;
+}
+
 .status-completed {
-  font-weight: 100 !important;
-  font-size: 50% !important;
+  font-size: 0.875rem !important;
+  opacity: 0.5;
+  font-family: "Montserrat", sans-serif;
+  color: #121212;
 }
 
 .status-border {
@@ -25,6 +33,8 @@
 
 .bookProgress-status {
   display: flex;
+  width: 600px;
+  justify-content: space-around;
 }
 
 .status-text {
@@ -34,12 +44,22 @@
 }
 
 .status-text h2 {
-  font-weight: 100 !important;
-  font-size: 50% !important;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #121212;
+  font-size: 0.813rem;
+  opacity: 0.5;
+  padding: 0;
+  margin: 0;
 }
 
 .status-text-chapter {
-  font-size: 85%;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #121212;
+  margin-top: 0.438rem;
+  font-size: 1rem;
+  letter-spacing: -0.4px;
 }
 
 .status-text h2,
@@ -48,9 +68,14 @@
 }
 
 .status-text-button {
-  background-color: #e2de84;
-  border: #aba30b;
-  font-size: 70%;
-  padding: 3px;
-  margin-top: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: #0290ff;
+  border-radius: 3px;
+  padding: 8px 24px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-top: 22px;
 }

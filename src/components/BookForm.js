@@ -40,8 +40,7 @@ export default function BookForm() {
   return (
     <div className="book-form-wrapper">
       <div className="book-form">
-        <hr />
-        <h2>Add Book</h2>
+        <h2>Add New Book</h2>
         <form>
           <input placeholder="Book title" ref={titleVal} />
           <input placeholder="Book author" ref={authorVal} />

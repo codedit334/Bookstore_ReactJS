@@ -34,6 +34,7 @@ export default function Books() {
             </li>
           ))}
       </ul>
+      <div className="horizontal-divider" />
       <BookForm />
     </div>
   );

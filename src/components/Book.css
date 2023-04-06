@@ -1,3 +1,4 @@
+
 .book {
   display: flex;
   justify-content: space-between;
@@ -10,15 +11,23 @@
 }
 
 .book-category {
-  font-size: 69%;
-  color: rgb(91, 90, 90);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  opacity: 0.8;
+  color: gray;
+  font-weight: 700 !important;
 }
 
 .book-author {
-  font-size: 85%;
-  color: black;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  font-family: "Roboto Slab", serif;
 }
 
 .book-title {
-  color: #437070;
+  font-family: "Roboto Slab", serif;
+  margin-top: 0.188rem;
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
 }
