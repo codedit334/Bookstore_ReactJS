@@ -175,11 +175,11 @@ To check for js errors run:
 - Twitter: [@oussedit](https://twitter.com/oussedit)
 - LinkedIn: [Oussama Elabdioui](https://www.linkedin.com/in/oussama-elabdioui-4677a41b6/)
 
-<!-- FUTURE FEATURES -->
+<!-- FUTURE FEATURES  -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Add Style.
+- Google Analytics.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

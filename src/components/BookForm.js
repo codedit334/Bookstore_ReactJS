@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addNewBook } from '../redux/books/booksSlice';
+import './BookForm.css';
 
 export default function BookForm() {
   const [addRequestStatus, setAddRequestStatus] = useState('idle');
@@ -11,7 +12,11 @@ export default function BookForm() {
 
   const handleClick = async (e) => {
     e.preventDefault();
-    if (!titleVal.current.value || !authorVal.current.value || addRequestStatus !== 'idle') return;
+    if (
+      !titleVal.current.value
+      || !authorVal.current.value
+      || addRequestStatus !== 'idle'
+    ) return;
     try {
       setAddRequestStatus('pending');
       await dispatch(
@@ -21,7 +26,7 @@ export default function BookForm() {
             + Math.random().toString(36).substring(2, 15),
           title: titleVal.current.value,
           author: authorVal.current.value,
-          category: '',
+          category: 'Fiction',
         }),
       );
       titleVal.current.value = '';
@@ -33,13 +38,15 @@ export default function BookForm() {
     }
   };
   return (
-    <div className="book-form">
-      <h2>Add Book</h2>
-      <form>
-        <input placeholder="Book title" ref={titleVal} />
-        <input placeholder="Book author" ref={authorVal} />
-        <input type="submit" onClick={handleClick} value="Submit" />
-      </form>
+    <div className="book-form-wrapper">
+      <div className="book-form">
+        <h2>Add New Book</h2>
+        <form>
+          <input placeholder="Book title" ref={titleVal} />
+          <input placeholder="Book author" ref={authorVal} />
+          <input type="submit" onClick={handleClick} value="Submit" />
+        </form>
+      </div>
     </div>
   );
 }
