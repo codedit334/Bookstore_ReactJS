@@ -52,6 +52,7 @@ nav {
 
 .nav-right {
   color: #0290ff;
+  cursor: pointer;
 }
 
 .menu {
@@ -72,12 +73,4 @@ a {
 
 a:visited {
   color: inherit;
-}
-
-.menu a:hover {
-  background-color: rgb(200, 199, 199);
-  padding: 10px 12px;
-  border-radius: 20px;
-  font-weight: bold;
-  transition: 0.5s ease-in-out background-color;
 }
