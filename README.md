@@ -97,7 +97,7 @@ HTML, CSS, NodeJS v18, ReactJS, Redux
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Comming soon...
+- [Link](https://react-bookstore-oe334.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
